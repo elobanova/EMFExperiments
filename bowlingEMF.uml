@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_Cu6K0BYNEeaY9I4BiDmnAg" name="bowling" URI="http://org/eclipse/example/bowling">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Cu6K0RYNEeaY9I4BiDmnAg" name="Player">
+      <ownedAttribute xmi:id="_Cu6K0hYNEeaY9I4BiDmnAg" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cu6K0xYNEeaY9I4BiDmnAg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Cu6K1BYNEeaY9I4BiDmnAg" name="dateOfBirth" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cu6K1RYNEeaY9I4BiDmnAg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Cu6K1hYNEeaY9I4BiDmnAg" name="League">
+      <ownedAttribute xmi:id="_Cu6K1xYNEeaY9I4BiDmnAg" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cu6K2BYNEeaY9I4BiDmnAg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Cu6K2RYNEeaY9I4BiDmnAg" name="players" type="_Cu6K0RYNEeaY9I4BiDmnAg" isOrdered="true" aggregation="composite" association="_Cu6K3BYNEeaY9I4BiDmnAg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cu6K2hYNEeaY9I4BiDmnAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cu6K2xYNEeaY9I4BiDmnAg" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cu6K3BYNEeaY9I4BiDmnAg" memberEnd="_Cu6K2RYNEeaY9I4BiDmnAg _Cu6K3RYNEeaY9I4BiDmnAg">
+      <ownedEnd xmi:id="_Cu6K3RYNEeaY9I4BiDmnAg" type="_Cu6K1hYNEeaY9I4BiDmnAg" association="_Cu6K3BYNEeaY9I4BiDmnAg"/>
+    </packagedElement>
+    <profileApplication xmi:id="_Cu6K3hYNEeaY9I4BiDmnAg">
+      <eAnnotations xmi:id="_Cu6K3xYNEeaY9I4BiDmnAg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_Cu6K4BYNEeaY9I4BiDmnAg" base_Package="_Cu6K0BYNEeaY9I4BiDmnAg" nsPrefix="org.eclipse.example.bowling"/>
+  <Ecore:EClass xmi:id="_Cu6K4RYNEeaY9I4BiDmnAg" base_Class="_Cu6K0RYNEeaY9I4BiDmnAg"/>
+  <Ecore:EClass xmi:id="_Cu6x4BYNEeaY9I4BiDmnAg" base_Class="_Cu6K1hYNEeaY9I4BiDmnAg"/>
+  <Ecore:EReference xmi:id="_Cu6x4RYNEeaY9I4BiDmnAg" base_Property="_Cu6K2RYNEeaY9I4BiDmnAg"/>
+</xmi:XMI>
